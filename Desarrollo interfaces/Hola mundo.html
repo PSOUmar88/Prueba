@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>
+        001 - Hola mundo
+    </title>
+
+    <style>
+
+         p {
+        padding: 20px 10px;
+        background-color: #eee;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+
+    </head>
+
+    <body>
+
+    <h1>001: Hola mundo</h1>
+
+    <h2>Bloque 1: 1.5 puntos hecho(1,2,3,4,5)</h2>
+
+    <p id="texto"></p>
+
+    <script>
+
+      document.getElementById("texto").innerHTML = "Hola mundo";
+
+      const datos = [ 'hola', 12, {}];
+
+      console.log(typeof datos[0]);
+      console.log(typeof datos[1]);
+      console.log(typeof datos[2]);
+
+      const num = 100;
+
+      const big = 50n;
+
+      console.log(num * 2);
+
+      console.log(big * 2n );
+
+      console.log(BigInt(num) + big);
+
+      const numeros = [10, 20, 30];
+
+      const nuevo = [0, ...numeros, 40, 50];
+
+      console.log(nuevo);
+
+      function sumarTodos(...nums){
+
+        let suma = 0;
+
+        for (let i = 0; i < nums.length; i++) {
+          suma += nums[i];
+          
+        }
+
+        return suma;
+
+      }
+
+      console.log(sumarTodos(5, 10, 15, 20, 120, 1, 4, 5, 8));
+
+      const coche = {
+        marca : 'toyota',
+        precio : 20000,
+        motor : {
+          tipo : 'gasolina',
+          potencia : 250
+        },
+        arrancar(){
+        console.log('El coche arranca');
+      }
+
+      }
+
+      coche.color = 'rojo';
+
+      coche.precioIVA = (coche.precio * 1.21);
+
+      delete coche.motor;
+
+      coche.arrancar();
+
+      console.log(coche.precioIVA);
+
+      for (let index = 1; index < 11; index++) {
+        
+        console.log(index);
+        
+      }
+
+      const frutas = ['manzana', 'pera', 'plátano'];
+
+      for (const element of frutas) {
+
+        console.log(element);
+        
+      }
+
+      const colores = ['rojo', 'verde', 'azul'];
+
+      for (const [indice, element] of colores.entries()) {
+
+        console.log('Posicion',indice, element);
+        
+      }
+
+      const libro = { titulo: 'El Quijote', autor: 'Cervantes', año: 1605 };
+
+      for (const key in libro) {
+        if (!Object.hasOwn(libro, key)) continue;
+        
+        const element = libro[key];
+
+        console.log(key, ':' ,element);
+        
+      }
+
+      for (const element of Object.keys(libro)) {
+
+        console.log(element);
+        
+      }
+      
+    </script>
+
+  </body>
+
+</html>

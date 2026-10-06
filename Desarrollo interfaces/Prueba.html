@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prueba inicial</title>
+
+</head>
+
+<body>
+
+    <script> 
+
+    //1.Bloque 1 
+     
+    const array = ['hola', 12, {}];
+
+    console.log(typeof(array[0]));
+    console.log(typeof(array[1]));
+    console.log(typeof(array[2]));
+
+    //2.Bloque 1 
+
+    const numeros = [10, 20, 30];
+
+    const numeros2 = [0, ...numeros, 40, 50];
+
+    console.log(numeros2);
+
+    let suma;
+
+    function sumarTodos(...todos){
+
+        for (let i = 0; i < todos.length; i++) {
+
+            suma = todos[i] + suma;
+            
+        }
+
+        console.log(suma);
+    }
+
+    console.log(sumarTodos(1,2,3,4));
+
+    </script>
+    
+</body>
+
+</html>

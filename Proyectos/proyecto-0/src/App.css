@@ -1,0 +1,138 @@
+.contenedor {
+  font-family: Arial, sans-serif;
+  padding: 1rem 2rem;
+}
+
+.contenedor h1 {
+  color: #087ea4;
+}
+
+.saludo {
+  border-left: 4px solid #087ea4;
+  background-color: #f0f7fa;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.saludo h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.saludo p {
+  margin: 0.25rem 0 0;
+  color: #555;
+}
+
+.avisos {
+  font-family: Arial, sans-serif;
+  max-width: 440px;
+  padding: 1rem;
+}
+
+.aviso {
+  border-left: 5px solid;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.aviso div {
+  margin-top: 0.25rem;
+}
+
+.info {
+  background-color: #e3f2fd;
+  border-color: #1565c0;
+}
+
+.exito {
+  background-color: #e8f5e9;
+  border-color: #2e7d32;
+}
+
+.error {
+  background-color: #ffebee;
+  border-color: #c62828;
+}
+.pagina {
+  font-family: Arial, sans-serif;
+  max-width: 520px;
+}
+
+.cabecera {
+  background-color: #087ea4;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.cabecera h1 {
+  margin: 0.25rem 0;
+}
+
+.cabecera p {
+  margin: 0 0 0.25rem;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.productos {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.25rem 0.75rem;
+  flex: 1;
+}
+
+.producto h3 {
+  margin: 0.25rem 0;
+  color: #087ea4;
+}
+
+.producto p {
+  margin: 0.25rem 0;
+}
+
+.pie {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: 0.9rem;
+}
+.contadores {
+  font-family: Arial, sans-serif;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.contador {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem 1rem 1rem;
+  text-align: center;
+  width: 230px;
+}
+
+.contador h3 {
+  margin: 0.5rem 0 0;
+  color: #087ea4;
+}
+
+.valor {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.contador button {
+  margin: 0 0.2rem;
+  padding: 0.3rem 0.6rem;
+}

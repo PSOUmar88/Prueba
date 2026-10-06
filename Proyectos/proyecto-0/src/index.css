@@ -1,0 +1,24 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+body{
+  margin: 0;
+}
+#root{
+  max-width: 640px;
+  margin:0 auto;
+  padding: 1.5rem;
+}
+ 
+button {
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+}
+
+div > div{
+  border: 3px solid purple;
+  margin: 10px;
+  padding: 10px;
+}

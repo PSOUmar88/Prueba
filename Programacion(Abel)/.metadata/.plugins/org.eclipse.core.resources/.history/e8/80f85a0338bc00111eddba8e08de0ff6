@@ -1,0 +1,15 @@
+package client;
+
+public class Test {
+	
+	public static void main(String[] args) throws CochesApiException, CochesNotFoundException {
+		
+		ApiClient apiClient = new ApiClient("https://crudcrud.com/api/ac2cb971103347b1acd933e80c7e335a");
+		
+		String coche = apiClient.getCocheById("6abbf8320ef6b103e89522a1");
+			
+		System.out.println(coche);
+		
+	}	
+
+}

@@ -1,0 +1,32 @@
+package client;
+
+import java.net.URI;
+
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse.BodyHandlers;
+
+public class ApiClient {
+
+	private URI urlBase;
+
+	private HttpClient httpClient;
+
+	public ApiClient(String urlBase) {
+
+		this.urlBase = URI.create(urlBase);
+		
+		httpClient = HttpClient.newHttpClient();
+
+	}
+
+	public String getCocheById(String id) {
+		
+		HttpRequest request = HttpRequest.newBuilder(urlBase).GET().build();
+		
+		httpClient.send(request, BodyHandlers.ofString());
+
+		return null;
+	}
+
+}

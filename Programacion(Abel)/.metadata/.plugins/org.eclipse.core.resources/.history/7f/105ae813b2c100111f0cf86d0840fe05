@@ -1,0 +1,15 @@
+package client;
+
+public class Test {
+	
+	public static void main(String[] args) throws CochesApiException, CochesNotFoundException {
+		
+		ApiClient apiClient = new ApiClient("https://caaca81e556e28181a7e.free.beeceptor.com/api/coches");
+		
+		Coche coche = apiClient.getCochesAll();
+			
+		System.out.println(coche);
+		
+	}	
+
+}

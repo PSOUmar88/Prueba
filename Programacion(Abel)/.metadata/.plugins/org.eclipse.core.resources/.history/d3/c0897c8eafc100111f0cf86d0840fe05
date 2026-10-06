@@ -1,0 +1,33 @@
+
+
+import lombok.Data;
+
+public class Coche {
+
+	public String matricula;
+    
+	public String marca;
+    
+	public String color;
+    
+	public String modelo;
+    
+	public String id;
+    
+    @Data
+
+    public Coche(String matricula, String marca, String color, String modelo, String id) {
+    	
+        this.matricula = matricula;
+        
+        this.marca = marca;
+        
+        this.color = color;
+        
+        this.modelo = modelo;
+        
+        this.id = id;
+    }
+
+    
+}

@@ -1,0 +1,23 @@
+package client;
+
+import java.util.List;
+
+public class Test {
+
+	public static void main(String[] args) throws CochesApiException, CochesNotFoundException {
+		
+		ApiClient apiClient = new ApiClient("https://caaca81e556e28181a7e.free.beeceptor.com/api/coches");
+		
+		try {
+			
+			List<Coche> coches = apiClient.getCochesAll();
+			
+			coches.forEach(System.out::println);
+			
+		}catch(CochesApiException e) {
+			e.printStackTrace();
+				
+		}	
+	}
+		
+

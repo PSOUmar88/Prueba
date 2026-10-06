@@ -1,0 +1,40 @@
+package client;
+
+import java.io.IOException;
+import java.net.URI;
+
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.net.http.HttpResponse.BodyHandlers;
+
+public class ApiClient {
+
+	private URI urlBase;
+
+	private HttpClient httpClient;
+
+	public ApiClient(String urlBase) {
+
+		this.urlBase = URI.create(urlBase);
+		
+		httpClient = HttpClient.newHttpClient();
+
+	}
+
+	public String getCocheById(String id) {
+		
+		HttpRequest request = HttpRequest.newBuilder(urlBase).GET().build();
+		
+		try {
+			HttpResponse<String> response = httpClient.send(request, BodyHandlers.ofString());
+		} 
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		
+
+		return null;
+	}
+
+}

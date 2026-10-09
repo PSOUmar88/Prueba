@@ -2,6 +2,11 @@
   font-family: Arial, sans-serif;
   padding: 1rem 2rem;
 }
+.button {
+
+  margin-bottom: 1rem
+
+}
 
 .contenedor h1 {
   color: #087ea4;
